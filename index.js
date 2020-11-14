@@ -13,14 +13,7 @@ client.on('message', (message) => {
 client.on('ready', () => {
     console.log(`${client.user.tag} is Online and ready to go`)
     client.user.setUsername("2Cool4Skool")
-    client.user.setStatus('available')
-    client.user.setPresence({
-            game: {
-                name: '-admin',
-                type: "PLAYING",
-
-            }
-        });
+    client.user.setGame("-Admin");
 })
 
 
