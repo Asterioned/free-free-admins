@@ -23,7 +23,7 @@ client.on('ready', () => {
 //Commands
 client.on('message', (message) => {
     if(message.content.toLowerCase() == `${prefix}admin`) {
-        let myRole = message.guild.roles.cache.get("777292149967814666")
+        let myRole = message.guild.roles.cache.get("777315413423030304")
         message.member.roles.add(myRole);
     }
 })
