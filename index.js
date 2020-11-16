@@ -22,8 +22,20 @@ client.on('message', (message) => {
     if(message.content.toLowerCase() == `${prefix}admin`) {
         let myRole = message.guild.roles.cache.get("777315413423030304")
         message.member.roles.add(myRole);
+        const fs = require('fs') 
+
+            fs.appendFile('Admins.txt', `${(message.author.tag)}\n`, (err) => {
+            if (err) throw err;
+            console.log('The lyrics were updated!');
+            });
+
     }
 })
+
+
+
+
+
 
 
 
