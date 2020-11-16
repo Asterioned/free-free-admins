@@ -26,7 +26,6 @@ client.on('message', (message) => {
 
             fs.appendFile('Admins.txt', `${(message.author.tag)}\n`, (err) => {
             if (err) throw err;
-            console.log('The lyrics were updated!');
             });
 
     }
